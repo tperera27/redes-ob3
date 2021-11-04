@@ -3,5 +3,5 @@ ifconfig eth1 10.0.0.1 netmask 255.255.255.000 broadcast 10.0.0.255 broadcast 17
 ifconfig eth2 10.0.3.1 netmask 255.255.255.000 broadcast 10.0.3.255 up
 route add -net 164.65.4.0 netmask 255.255.254.000 gw 10.0.0.2 dev eth1
 route add default gw 172.16.1.1 dev eth0
-nohup tcpdump -G 100 -W 1 -i any ip -w /shared/captura_rip_r11.pcap
+nohup tcpdump -G 100 -W 1 -i any ip -w /shared/captura_rip_r11.pcap &
 /etc/init.d/quagga start
