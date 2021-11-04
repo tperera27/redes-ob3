@@ -1,3 +1,5 @@
 ifconfig eth0 10.0.6.1 netmask 255.255.255.000 broadcast 10.0.6.255 up
 ifconfig eth1 10.0.2.1 netmask 255.255.255.000 broadcast 10.0.2.255 up
 ifconfig eth2 10.0.3.2 netmask 255.255.255.000 broadcast 10.0.3.255 up
+nonhup tcpdump -G 40 -W 1 -i any ip -w /shared/captura_rip_r14.pcap
+/etc/init.d/quagga start
