@@ -1,4 +1,4 @@
-ifconfig eth0 10.0.6.1 netmask 255.255.255.000 broadcast 10.0.6.255 up
+ifconfig eth0 10.0.6.1 netmask 255.255.255.252 broadcast 10.0.6.3 up
 ifconfig eth1 10.0.2.1 netmask 255.255.255.000 broadcast 10.0.2.255 up
 ifconfig eth2 10.0.3.2 netmask 255.255.255.000 broadcast 10.0.3.255 up
 route add -net 164.65.4.128/29 gw 10.0.6.2 dev eth0
