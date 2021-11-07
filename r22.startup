@@ -3,3 +3,4 @@ ifconfig eth1 10.0.0.1 netmask 255.255.255.000 broadcast 10.0.0.255 up
 route add default gw 164.65.4.132 dev eth0
 iptables -t nat -A POSTROUTING -s 10.0.0.0/24 -o eth0 -j SNAT --to 164.65.4.131
 /etc/init.d/isc-dhcp-server start
+nohup tcpdump -i any ip -w /shared/captura_r22.pcap

@@ -1,1 +1,2 @@
 /etc/init.d/networking restart
+nohup tcpdump -i any ip -w /shared/captura_pc2.pcap
