@@ -1,3 +1,3 @@
 ifconfig eth0 10.0.6.2 netmask 255.255.255.000 broadcast 10.0.6.255 up
-ifconfig eth1 164.65.4.132 netmask 255.255.255.247 broadcast 164.65.4.255 up
+ifconfig eth1 164.65.4.132 netmask 255.255.255.248 broadcast 164.65.4.7 up
 route add default gw 10.0.6.1 dev eth0
